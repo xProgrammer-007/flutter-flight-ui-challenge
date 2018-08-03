@@ -19,7 +19,8 @@ class DepartureArrivalCard extends StatelessWidget {
                     'DXB',
                     style: TextStyle(
                         fontSize: 14.0,
-                        color: Colors.black54
+                        color: Colors.black54,
+                        fontWeight: FontWeight.w500
                     ),
                   ),
                   Padding(
@@ -30,15 +31,26 @@ class DepartureArrivalCard extends StatelessWidget {
                     'SFO',
                     style: TextStyle(
                         fontSize: 14.0,
-                        color: Colors.black54
+                        color: Colors.black54,
+                        fontWeight: FontWeight.w500
                     ),
                   ),
                 ],
+              ),
+              Container(
+                width: 2.0,
+                height: 50.0,
+                color: const Color(0xFFEEEEEEE)
               ),
               TripleTextVerticalAligned(
                 firstText: 'Departure Time',
                 secondText: '10:00',
                 thirdText: 'Thursday',
+              ),
+              Container(
+                  width: 2.0,
+                  height: 50.0,
+                  color: const Color(0xFFEEEEEEE)
               ),
               TripleTextVerticalAligned(
                 firstText: 'Arrival Time',
@@ -77,6 +89,7 @@ class TripleTextVerticalAligned extends StatelessWidget {
           style: TextStyle(
             color: Colors.black54,
             fontSize: 14.0,
+            fontWeight: FontWeight.w500
           ),
         ),
         Padding(

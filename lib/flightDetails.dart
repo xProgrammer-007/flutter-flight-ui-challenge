@@ -8,6 +8,7 @@ class FlightDetails extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: Card(
+        elevation: 4.0,
           child:Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
@@ -20,6 +21,11 @@ class FlightDetails extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top:10.0),
                       child: Icon(Icons.airplanemode_active,color: Colors.pink.withAlpha(100),size:35.0),
+                    ),
+                    Container(
+                        width: 1.5,
+                        height: 70.0,
+                        color: const Color(0xFFEEEEEEE)
                     ),
                     FourTextVerticalAligned(
                       firstText: 'From',
@@ -56,8 +62,14 @@ class FlightDetails extends StatelessWidget {
                     )
                   ],
                 ),
+                Container(
+                    margin: const EdgeInsets.only(top:10.0),
+                    width: double.infinity,
+                    height: 1.5,
+                    color: const Color(0xFFEEEEEEE)
+                ),
                 Padding(
-                  padding: const EdgeInsets.only(top:25.0),
+                  padding: const EdgeInsets.only(top:15.0),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,

@@ -197,6 +197,7 @@ class FourTextVerticalAligned extends StatelessWidget {
             style: TextStyle(
               color: Colors.black54,
               fontSize: 14.0,
+              fontWeight: FontWeight.w500
             ),
           ),
         ),
@@ -218,7 +219,7 @@ class FourTextVerticalAligned extends StatelessWidget {
                 child: Text(
                   fourthText,
                   style: TextStyle(
-                    color: Colors.black26,
+                    color: Colors.pink.withAlpha(100),
                     fontSize: 12.5,
                   ),
                 ),
